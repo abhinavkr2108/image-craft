@@ -6,7 +6,7 @@ export default function AppLayout({ children }: { children: React.ReactNode }) {
     <React.Fragment>
       <div className="flex">
         <Sidebar />
-        <div className="bg-gray-50 w-full">{children}</div>
+        <div className="bg-gray-50 w-full h-screen">{children}</div>
       </div>
     </React.Fragment>
   );
