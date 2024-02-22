@@ -28,7 +28,7 @@ const ImageSchema = new mongoose.Schema(
       type: URL,
       required: true,
     },
-    imageId: {
+    publicId: {
       type: String,
       required: true,
     },

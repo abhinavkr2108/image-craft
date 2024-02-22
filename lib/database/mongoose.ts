@@ -27,6 +27,7 @@ export async function connectToDatabase() {
     mongoose.connect(MONGO_URI, {
       dbName: "image-craft",
       bufferCommands: false,
+      serverSelectionTimeoutMS: 60000,
     });
   cached.connection = await cached.promise;
   return cached.connection;
